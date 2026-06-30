@@ -1,4 +1,4 @@
-# SaineX
+# QuestHzSwitcher
 
 A cross-platform desktop app (Windows / macOS / Linux) for switching your
 Meta Quest's rendering Hz on the fly — either with a button in the app
