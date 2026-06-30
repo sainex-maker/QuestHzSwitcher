@@ -5,6 +5,15 @@ Meta Quest's rendering Hz on the fly — either with a button in the app
 window, or by holding the Oculus/Meta button (or another mapped button)
 on the headset itself.
 
+## Download
+
+**Windows users:** grab the ready-to-run portable `.exe` from the
+[Releases page](https://github.com/sainex-maker/QuestHzSwitcher/releases/latest) —
+no Python or setup required, just download and run.
+
+On macOS/Linux, or if you want to run from source / modify the code, see
+[Running from source](#running) below.
+
 ## Files
 
 - `hz_core.py` — connection logic over ADB and Hz switching (no GUI).
@@ -120,7 +129,7 @@ file — no need to keep a `platform-tools` folder around.
 
 3. Run the build:
    ```
-   pyinstaller --onefile --noconsole --name "SaineX" ^
+   pyinstaller --onefile --noconsole --name "QuestHzSwitcher" ^
      --add-binary "adb.exe;." ^
      --add-binary "AdbWinApi.dll;." ^
      --add-binary "AdbWinUsbApi.dll;." ^
@@ -131,12 +140,12 @@ file — no need to keep a `platform-tools` folder around.
 
    If `pyinstaller` isn't recognized as a command, use:
    ```
-   python -m PyInstaller --onefile --noconsole --name "SaineX" --add-binary "adb.exe;." --add-binary "AdbWinApi.dll;." --add-binary "AdbWinUsbApi.dll;." hz_gui.py
+   python -m PyInstaller --onefile --noconsole --name "QuestHzSwitcher" --add-binary "adb.exe;." --add-binary "AdbWinApi.dll;." --add-binary "AdbWinUsbApi.dll;." hz_gui.py
    ```
 
 4. The finished file will be here:
    ```
-   dist\SaineX.exe
+   dist\QuestHzSwitcher.exe
    ```
    This is a fully portable exe — you can move it anywhere on its own,
    no `platform-tools` folder required. On launch, it extracts `adb.exe`
