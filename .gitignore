@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# PyInstaller build output
+build/
+dist/
+*.spec
+
+# Android platform-tools binaries (download separately, don't commit)
+adb.exe
+adb
+AdbWinApi.dll
+AdbWinUsbApi.dll
+fastboot.exe
+fastboot
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
